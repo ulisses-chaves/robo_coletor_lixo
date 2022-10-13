@@ -22,7 +22,7 @@ void setup() {
 //Como estamos sem sensores, ele irá apenas realizar 
 //movimentos circulares para coletar o lixo espalhado
 void loop() {
-  circulo();
+  procuraLixo();
   delay(2000);
 }
 
@@ -45,7 +45,7 @@ void esquerda() {
   motor4.run(BACKWARD); //Motor traseiro direito
 }
 
-void circulo() {
+void procuraLixo() {
   frente();
   delay(1500);
   esquerda();
